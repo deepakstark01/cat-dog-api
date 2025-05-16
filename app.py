@@ -14,6 +14,8 @@ ALLOWED_ORIGINS = [
     "http://localhost:3000/",
     "http://localhost:4000",
     "http://localhost:4000/",
+    "https://cat-dog-coral.vercel.app",
+    "https://cat-dog-coral.vercel.app/",
 ]
 
 app.add_middleware(
