@@ -72,4 +72,5 @@ async def model_info():
 if __name__ == "__main__":
     import uvicorn
     # If this file is main.py, uvicorn.run can take the app instance directly:
-    uvicorn.run(app, host="0.0.0.0", port=80)
+    port = int(os.environ.get("PORT", 80))
+    uvicorn.run(app, host="0.0.0.0", port=port)
